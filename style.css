@@ -1,0 +1,312 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+html{
+  font-size: 10px;
+}
+
+#navBar{
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  background-color: rgb(242, 242, 242);
+  align-items: center;
+}
+
+#buttonContainer{
+  text-align: center;
+}
+
+#mainText{
+  margin-top: 4rem;
+  width: 100%;
+}
+
+#picWrapper{
+  position: relative;
+}
+
+.frontPic:hover{
+  transition: 0.3s;
+    transform: translate3D(0,-1px,0) scale(1.03);
+}
+
+.frontPic{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  border-radius: 18px;
+  width: 30rem;
+  object-fit: cover;
+}
+
+#front1{
+  margin-top: 3rem;
+  z-index: 1;
+  top: 0;
+  left: 8rem;
+  width: 22rem;
+  height: 30rem;
+}
+
+#front2{
+  margin-top: 10rem;
+  z-index: 2;
+  top: 5rem;
+  left: 26rem;
+}
+
+#front3{
+  margin-top: 10rem;
+  z-index: 3;
+  top: 30rem;
+  left: 4rem;
+  height: 22rem;
+}
+
+#homeButtonContainer{
+   display: flex; 
+   align-items: center;
+}
+
+#wrapper{
+  display: flex;
+}
+
+#landingContent{
+  width: 60%;
+}
+
+#logoText{
+  font-weight: 600;
+  margin-left: 1.5rem;
+}
+
+#logo{
+height:5rem;
+width: 5rem;
+margin-left: 2rem;
+}
+
+.center{
+  text-align: center;
+}
+
+#mainDesc{
+  font-size: 5rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  font-weight: 400;
+}
+
+#shortDesc{
+  font-size: 3rem;
+  padding-top:2rem;
+  padding-left: 5rem;
+}
+
+#myRange{
+  height: 4rem;
+  width: 25rem;
+  background-color: red;
+}
+
+#refresh{
+  margin-left: 0;
+  width: 18rem;
+  height: 4rem;
+  padding-top: 0.8rem;
+  margin-top: 1rem;
+}
+
+.button{
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 5rem;
+  margin-left: 9rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: red;
+  color:white;
+}
+
+#adjust{
+  margin-top: 4rem;
+}
+
+.button:hover{
+  transition: 0.1s;
+  background-color: rgb(188, 0, 0);
+  cursor: pointer;
+}
+
+#goBack{
+  margin-left: 0;
+}
+
+#footer{
+  width:100%;
+  height:7rem;
+}
+
+#resultOut{
+  margin: 1rem;
+}
+
+
+#userCoords{
+  margin: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+#notQuite{
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+#random{
+  margin-left: 0;
+  margin-top: 0;
+}
+
+#resultsTextContainer{
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+
+#resultsCardContainer{
+  height: 20rem !important;
+}
+
+#tryAgain{
+  margin-left: 0 !important;
+}
+
+.card {
+  font-size: 20px;
+  padding-bottom: 0px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  flex-basis: 29%;
+  font-size: 200%;
+}
+
+p{
+  font-size: smaller;
+}
+
+.card:hover {
+  transition: 0.2s;
+  transform: translate3D(0,-1px,0) scale(1.03);
+}
+
+.cardImg{
+  object-fit: cover;
+  height: 70%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#prompt{
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+.container{
+  height: 10rem;
+}
+
+
+@media screen and (min-width: 1000px)
+{
+  .cardcontainer{
+    width: 70%;
+    height: 110rem;
+  }
+
+  #special{
+    height: 50% !important;
+  }
+  .card{
+    padding-bottom: 2rem;
+    margin-bottom: 0px;
+    height: 28%;
+  }
+}
+
+.cardcontent{
+  display: flex;
+  justify-content: center;
+}
+
+.cardcontainer{
+  text-align: center;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#resultCardContainer{
+  width: 100%;
+  padding-left: 0rem;
+  /* height: 40rem; */
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 45rem;
+}
+
+.result{
+  font-size: 1.8rem;
+  height: 20rem;
+  width: 35rem;
+  margin: 1.5rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.result:hover{
+  height: 40rem !important;
+  transition: 0.2s;
+  transform: translate3D(0,-1px,0) scale(1.03);
+  overflow: visible;
+}
+
+#tryAgain{
+  width: 28rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: red;
+  color:white;
+}
+
+#tryAgain:hover{
+  transition: 0.1s;
+  background-color: rgb(188, 0, 0);
+  cursor: pointer;
+}

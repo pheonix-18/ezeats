@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EZ Eats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id = "navBar">
+        <a style = "text-decoration: none; color: inherit" href = "index.html">
+            <div id = "homeButtonContainer">
+              <img id = "logo" src = "assets/ezeatslogo.png">
+              <h1 id = "logoText">EZ Eats</h1>
+          </div>
+          </a>
+      </div>
+    <div id = "content">
+      <div id = "resultsTextContainer">
+        <h1 id = "resultOut"></h1>
+        <h1 id = "userCoords"></h1>
+      </div>
+      
+       <div id = "resultCardContainer">
+
+        <div class = "result">
+          <div class="container">
+            <h4><b>Tijuana Flats</b></h4>
+            <p>Rating: 4.4</p>
+            <p>Distance: 1.3 miles</p>
+            <p>Open now</p>
+            <p>Kitschy Mexican chain restaurant known for an extensive hot sauce bar & colorful, muraled walls.</p>
+            <p>Review: Tijuana flats is a great place for a quick dinner. The food is decent and atmosphere is okay. The chips and queso were so delicious and the burrito was jam packed. Tijuana gives a lot of food at a great price, and can’t go wrong here!</p>
+            <p>Review: The food here was great. The service was really good as well.\nWe had chicken burrito bowl, chicken chimichanga and a pork burrito (this was huge btw).  Everything was perfectly seasoned and presentation was excellent.  Will definitely return again.</p>
+          </div>
+        </div>
+
+        <div class = "result">
+          <div class="container">
+            <h4><b>QDOBA Mexican Eats</b></h4>
+            <p>Rating: 4.2</p>
+            <p>Distance: 0.7 miles</p>
+            <p>Open now</p>
+            <p>Simple Mexican counter-serve chain for burritos, tacos & more, including health-oriented options.</p>
+            <p>Review: This is very good place to eat. The food is so fresh and yummy. Their normal chicken bowl with green salsa and queso is so yummy. The quantity is enough for 2 people or 2 times. Staffs here are very nice. I would recommend Qdoba to my friends and families, will go again.</p>
+            <p>Review: No different than Chipotle ,Moe’s, but the steak was good.</p>
+          </div>
+        </div>
+
+        <div class = "result">
+          <div class="container">
+            <h4><b>Chipotle Mexican Grill</b></h4>
+            <p>Rating: 3.4</p>
+            <p>Distance: 1.8 miles</p>
+            <p>Open now</p>
+            <p>Fast-food chain offering Mexican fare, including design-your-own burritos, tacos & bowls.</p>
+            <p>Review: I was hesitant to order thru the app due to the bad reviews here but no complaints for me as they got it all right, and in just over 5 minutes!</p>
+            <p>Review: So I ended up with about 4 small pieces of steak in my bowl. For the prices we pay these days for food this is ridiculous, I shouldn't have to order double meat just to get a regular portion</p>
+          </div>
+        </div>
+
+       </div>
+       <div class = "center">
+        <!-- <h1 id = "adjust">Adjust your search area by moving the slider.</h1>
+        <div class = "center">
+        <input type="range" min="0" max="50" value="15" class="slider" id="myRange">
+        <h1 id = "miles">15 miles</h1>
+        </div>
+        <div class = "center">
+          <button onclick = "window.location.reload()" id = "refresh" class = "button">Refresh results</button>
+        </div> -->
+        <button id = "tryAgain" onclick = "location.href = 'cuisine.html'">Want a different cuisine?</button>
+       </div>       
+    </div> 
+  </body>
+  <script src="results.js"></script>
+</html>

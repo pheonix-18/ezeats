@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EZ Eats</title>
+    <link rel="stylesheet" href="cardstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id = "navBar">
+        <a style = "text-decoration: none; color: inherit" href = "index.html">
+            <div id = "homeButtonContainer">
+              <img id = "logo" src = "assets/ezeatslogo.png">
+              <h1 id = "logoText">EZ Eats</h1>
+          </div>
+          </a>
+      </div>
+    <div>
+      <div class = "center">
+        <h1 id = "prompt">Any dietary restrictions?</h1>
+      </div>
+      <div class = "cardcontent">
+        <div class = "cardcontainer" id = "special">
+          <div id = "none" onclick = "location.href = 'results.html'" class="card">
+              <img class = "cardImg"  src="assets/none.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4><b>No Restrictions</b></h4>
+                <p>No limitations on food choices.</p>
+              </div>
+          </div>
+          
+          <div id = "vegetarian" onclick = "location.href = 'results.html'" class="card">
+              <img  class = "cardImg" src="assets/vegan.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4><b>Vegetarian</b></h4>
+                <p>Excludes meat, may include other animal products.</p>
+              </div>
+          </div>
+  
+          <div id = "vegan" onclick = "location.href = 'results.html'" class="card">
+              <img  class = "cardImg" src="assets/vegetarian.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4><b>Vegan</b></h4>
+                <p>Excludes all animal products.</p>
+              </div>
+          </div>  
+      </div>
+    </div>
+    
+    <div id = "buttonContainer">
+      <button id = "goBack" class = "button" onclick = "location.href = 'cuisine.html'">Go Back</button>
+    </div>
+  </body>
+  <script src="diet.js"></script>
+</html>

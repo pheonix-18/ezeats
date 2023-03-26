@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EZ Eats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id = "navBar">
+        <a style = "text-decoration: none; color: inherit" href = "index.html">
+            <div id = "homeButtonContainer">
+              <img id = "logo" src = "assets/ezeatslogo.png">
+              <h1 id = "logoText">EZ Eats</h1>
+          </div>
+          </a>
+      </div>
+      <div class = "center">
+        <h1 id = "prompt">What are you craving today?</h1>
+      </div>
+      
+    <div>
+    <div class = "cardcontent">
+        <div class = "cardcontainer">
+            <div  id = "chinese" onclick = "location.href = 'diet.html'" class="card">
+                <img class = "cardImg" src="assets/chinese.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Chinese</b></h4>
+                  <p>Various dishes with grains, sauces, and seasonings.</p>
+                </div>
+            </div>
+            
+            <div id = "mexican" onclick = "location.href = 'diet.html'" class="card">
+                <img class = "cardImg" src="assets/mexican.jpg" alt="Avatar" style="width:100%">
+                <div class="container">                  <h4><b>Mexican</b></h4>
+                  <p>Spicy mix of different cultures and ingredients.</p>
+                </div>
+            </div>
+           
+    
+            <div  id = "italian" onclick = "location.href = 'diet.html'" class="card">
+                <img class = "cardImg"  src="assets/italian.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Italian</b></h4>
+                  <p>Simple and fresh dishes with dough, dairy, and plants.</p>
+                </div>
+            </div>
+    
+            <div id = "indian"  onclick = "location.href = 'diet.html'" class="card">
+                <img class = "cardImg"  src="assets/indian.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Indian</b></h4>
+                  <p>Rich and diverse dishes with grains, legumes, sauces, and seasonings</p>
+                </div>
+            </div>
+    
+            <div id = "korean" onclick = "location.href = 'diet.html'"  class="card">
+                <img  class = "cardImg" src="assets/korean.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Korean</b></h4>
+                  <p>Spicy and fermented dishes with grains, vegetables, proteins, and liquids.</p>
+                </div>
+            </div>
+    
+            <div id = "japanese" onclick = "location.href = 'diet.html'"  class="card">
+                <img class = "cardImg"  src="assets/japanese.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Japanese</b></h4>
+                  <p>Delicate and refined dishes with grains, fish, noodles, and beans.</p>
+                </div>
+            </div>
+    
+            <div id = "jamaican" onclick = "location.href = 'diet.html'" class="card">
+                <img class = "cardImg"  src="assets/jamaican.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Jamaican</b></h4>
+                  <p>Vibrant and flavorful dishes with seasonings, grains, vegetables, and fruits.</p>
+                </div>
+            </div>
+    
+            <div id = "american" onclick = "location.href = 'diet.html'" class="card">
+                <img class = "cardImg"  src="assets/american.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>American</b></h4>
+                  <p>Diverse dishes with meat, potatoes, bread, and sweets.</p>
+                </div>
+            </div>
+    
+            <div id = "philippine" onclick = "location.href = 'diet.html'" class="card">
+                <img class = "cardImg"  src="assets/philippine.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Philippine</b></h4>
+                  <p>Mixed dishes with grains, meat, noodles, and desserts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "center">
+      <button onclick = "location.href = 'diet.html'" class = "button" id = "random">Choose for me!</button>
+    </div>
+    <div id = "footer"></div>  
+  </body>
+  <script src="cuisine.js"></script>
+</html>
