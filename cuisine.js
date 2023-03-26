@@ -14,95 +14,83 @@ import logo9 from './images/philippine.jpg';
 
 
 export default function Step1({ setValue, nextPage }) {
-    const handleClick = () => {
+    const handleClick = (event) => {
+        console.log(event.target.alt);
+        setValue(event.target.alt);
         nextPage();
     }
 
+    const cuisines = [
+        {
+            key: 1,
+            name: "Chinese",
+            image: logo,
+            alt: "Chinese",
+        },
+        {
+            key: 2,
+            name: "Mexican",
+            image: logo2,
+            alt: "Mexican",
+        },
+        {
+            key: 3,
+            name: "Italian",
+            image: logo3,
+            alt: "Italian",
+        },
+        {
+            key: 4,
+            name: "Indian",
+            image: logo4,
+            alt: "Indian",
+        },
+        {
+            key: 5,
+            name: "Korean",
+            image: logo5,
+            alt: "Korean",
+        },
+        {
+            key: 6,
+            name: "Japanese",
 
+            image: logo6,
+            alt: "Japanese",
+        },
+        {
+            key: 7,
+            name: "Jamaican",
+            image: logo7,
+            alt: "Jamaican",
+        },
+        {
+            key: 8,
+            name: "American",
+            image: logo8,
+            alt: "America",
+        },
+        {
+            key: 9,
+            name: "Philippine",
+            image: logo9,
+            alt: "Philippine",
+        },
+    ];
+    const cuisineList = cuisines.map(cuisine =>
+        <div key={cuisine.key} onClick={handleClick} className="card">
+            <img className="card-image" src={cuisine.image} alt={cuisine.alt} />
+            <div className="container-width-parent">
+                <h4>
+                    <b>{cuisine.name}</b>
+                </h4>
+            </div>
+        </div>
+    );
     return (
         <>
             <div className="container-center">
-                <div onClick={handleClick} className="card">
-                    <img className="card-image" src={logo} alt="Chinese Cuisine" />
-                    <div className="container-width-parent">
-                        <h4>
-                            <b>Chinese</b>
-                        </h4>
-                        <p>Architect &amp; Engineer</p>
-                    </div>
-                </div>
-                <div onClick={handleClick} className="card">
-                    <img className="card-image" src={logo2} alt="Mexican Cuisine" />
-                    <div className="container-width-parent">
-                        <h4>
-                            <b>Mexican</b>
-                        </h4>
-                        <p>Architect &amp; Engineer</p>
-                    </div>
-                </div>
-                <div onClick={handleClick} className="card">
-                    <img className="card-image" src={logo3} alt="Italian Cuisine" />
-                    <div className="container-width-parent">
-                        <h4>
-                            <b>Italian</b>
-                        </h4>
-                        <p>Architect &amp; Engineer</p>
-                    </div>
-                </div>
-                <div onClick={handleClick} className="card">
-                    <img className="card-image" src={logo4} alt="Indian Cuisine" />
-                    <div className="container-width-parent">
-                        <h4>
-                            <b>Indian</b>
-                        </h4>
-                        <p>Architect &amp; Engineer</p>
-                    </div>
-                </div>
-                <div onClick={handleClick} className="card">
-                    <img className="card-image" src={logo5} alt="Korean Cuisine" />
-                    <div className="container-width-parent">
-                        <h4>
-                            <b>Korean</b>
-                        </h4>
-                        <p>Architect &amp; Engineer</p>
-                    </div>
-                </div>
-                <div onClick={handleClick} className="card">
-                    <img className="card-image" src={logo6} alt="Japanese Cuisine" />
-                    <div className="container-width-parent">
-                        <h4>
-                            <b>Japanese</b>
-                        </h4>
-                        <p>Architect &amp; Engineer</p>
-                    </div>
-                </div>
-                <div onClick={handleClick} className="card">
-                    <img className="card-image" src={logo7} alt="Jamaican Cuisine" />
-                    <div className="container-width-parent">
-                        <h4>
-                            <b>Jamaican</b>
-                        </h4>
-                        <p>Architect &amp; Engineer</p>
-                    </div>
-                </div>
-                <div onClick={handleClick} className="card">
-                    <img className="card-image" src={logo8} alt="American Cuisine" />
-                    <div className="container-width-parent">
-                        <h4>
-                            <b>American</b>
-                        </h4>
-                        <p>Architect &amp; Engineer</p>
-                    </div>
-                </div>
-                <div onClick={handleClick} className="card">
-                    <img className="card-image" src={logo9} alt="Philippine Cuisine" />
-                    <div className="container-width-parent">
-                        <h4>
-                            <b>Philippine</b>
-                        </h4>
-                        <p>Architect &amp; Engineer</p>
-                    </div>
-                </div>
+                {cuisineList}
             </div>
         </>
     )

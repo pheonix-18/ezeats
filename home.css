@@ -63,6 +63,10 @@ html {
   background-color: red;
   color: white;
 }
+.container-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 #getStarted:hover {
   transition: 0.1s;
@@ -90,6 +94,29 @@ html {
   left: 8rem;
   width: 22rem;
   height: 30rem;
+}
+
+.btn-block {
+  display: block;
+}
+
+.button {
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 5rem;
+  margin-left: 9rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: red;
+  color: white;
+}
+.button:hover {
+  transition: 0.1s;
+  background-color: #db4d4d;
+  cursor: pointer;
 }
 
 #front2 {

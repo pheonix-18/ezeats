@@ -1,14 +1,18 @@
 import React from "react";
 import "./home.css";
+import "./App.css";
 import front1 from "./images/front1.jpg";
 import front2 from "./images/front2.jpg";
 import front3 from "./images/front3.jpg";
 
-export default function Home() {
+export default function Step0({ nextPage }) {
+    const handleClick = () => {
+        nextPage();
+    }
     return (
         <>
             <div id="content">
-                <div id="wrapper">
+                <div className="container-row">
                     <div id="landingContent">
                         <div id="mainText">
                             <h2 id="mainDesc">
@@ -17,9 +21,11 @@ export default function Home() {
                                 Restrictions.
                             </h2>
                             <h3 id="shortDesc">Find your food match in three clicks.</h3>
-                            <button className="button" onclick="location.href = 'cuisine.html'">
-                                Get Started
-                            </button>
+                            <div className="btn-block">
+                                <button className="button" onClick={handleClick}>
+                                    Get Started
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div id="picWrapper">
