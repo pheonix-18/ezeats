@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+#navBar {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  background-color: rgb(242, 242, 242);
+  align-items: center;
+}
+
+#buttonContainer {
+  text-align: center;
+}
+
+#mainText {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+#picWrapper {
+  position: relative;
+}
+
+#front1 {
+  margin-top: 3rem;
+  position: absolute;
+  width: 30rem;
+  border-radius: 18px;
+  z-index: 1;
+  top: 0;
+  left: 8rem;
+  object-fit: cover;
+  width: 22rem;
+  height: 30rem;
+}
+
+#front2 {
+  margin-top: 10rem;
+  position: absolute;
+  width: 30rem;
+  border-radius: 18px;
+  z-index: 2;
+  top: 5rem;
+  left: 26rem;
+}
+
+#front3 {
+  margin-top: 10rem;
+  position: absolute;
+  width: 30rem;
+  border-radius: 18px;
+  z-index: 3;
+  top: 30rem;
+  left: 4rem;
+  height: 22rem;
+  object-fit: cover;
+}
+
+#homeButtonContainer {
+  display: flex;
+  align-items: center;
+}
+
+#wrapper {
+  display: flex;
+}
+
+#landingContent {
+  width: 60%;
+}
+
+#logoText {
+  font-weight: 600;
+  margin-left: 1.5rem;
+}
+
+#logo {
+  height: 5rem;
+  width: 5rem;
+  margin-left: 2rem;
+}
+
+.center {
+  text-align: center;
+}
+
+#mainDesc {
+  font-size: 5rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  font-weight: 400;
+}
+
+#shortDesc {
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-left: 5rem;
+}
+
+.button {
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 5rem;
+  margin-left: 9rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: red;
+  color: white;
+}
+
+.button:hover {
+  transition: 0.1s;
+  background-color: rgb(188, 0, 0);
+  cursor: pointer;
+}
+
+#goBack {
+  margin-left: 0;
+}
+
+#footer {
+  width: 100%;
+  height: 50px;
+}
+
+#resultOut {
+  margin: 1rem;
+}
+
+#userCoords {
+  margin: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 8rem;
+}
+
+#notQuite {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+#resultsTextContainer {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+
+#tryAgain {
+  margin-left: 2rem;
+}
