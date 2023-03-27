@@ -6,12 +6,13 @@ vegan_foods = ["vegan", "tofu", "vegan cheese", "vegan milk", "vegan butter", "v
 non_veg_foods = ["chicken", "steak", "burrito", "beef", "cheese", "meat", "tacos", "pork"]
 
 
-@api_view(['GET'])
+@api_view(['POST'])
 def getData(data):
     request = data.data;
     latitude = str(request.get('latitude'));
     longitude = str(request.get('longitude'));
     cusine = request.get('cusine');
+    print(latitude, longitude, cusine);
     # Create a global variable preference
     global preference
     preference = request.get('preference')
@@ -78,7 +79,7 @@ def getPlaceDetails(place_id, rest):
         words.append(process_text(rest['name']))
     else:
         rest['restaurant_description'] = "";
-
+    preferred_meal_type = True;
     if preference == "vegan":
         preferred_meal_type = False;
         for word in words:
@@ -103,7 +104,7 @@ def getPlaceDetails(place_id, rest):
             # Check review length less than 100 characters
             processed_text = process_text(review['text']);
             for word in processed_text:
-                print(word)
+                # print(word)
                 if preference == "vegan":
                     if word in vegan_foods:
                         rest['reviews'].append(review['text']);
